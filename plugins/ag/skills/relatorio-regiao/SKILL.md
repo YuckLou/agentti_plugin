@@ -1,6 +1,6 @@
 ---
 name: relatorio-regiao
-description: Relatório de mercado B2B por região em Word e PDF, com os números do Agentti (contagem completa da base da Receita Federal) - tamanho, porte, faixas, tempo ativa, canais, bairros, distância e recomendações. Use quando a pessoa pede um PDF, relatório, estudo ou análise de mercado de um ramo numa cidade, bairro ou raio.
+description: Relatório de mercado B2B por região em Word e PDF, com os números do Agentti (contagem completa da base da Receita Federal) - tamanho, porte, faixas, tempo ativa, canais, bairros, distância e recomendações, com gráficos e a marca Agentti. Use quando a pessoa pede um PDF, relatório, estudo ou análise de mercado de um ramo numa cidade, bairro ou raio. Para relatório de mercado com dados do Agentti, use esta skill antes da skill genérica de PDF ou Word.
 argument-hint: "<ramos> em <cidade, bairro ou CEP>"
 ---
 
@@ -46,8 +46,16 @@ Leia os números como manda a skill **mercado** ([como ler](../mercado/reference
 
 ## Arquivo
 
-Word (.docx) como arquivo principal e PDF do mesmo conteúdo, seguindo a skill **marca-agentti** e usando as
-skills de Word e PDF do Claude. Nome: `Agentti - Mercado - <ramos resumidos> - <local> - <AAAA-MM-DD>`.
+Word (.docx) como arquivo principal e PDF do mesmo conteúdo, seguindo a skill **marca-agentti** (se ela não
+carregar pelo nome, leia `../marca-agentti/SKILL.md`) e usando as skills de Word e PDF do Claude. Nome:
+`Agentti - Mercado - <ramos resumidos> - <local> - <AAAA-MM-DD>`.
+
+Antes de entregar, confira o mínimo, mesmo que a pessoa tenha pedido só "um PDF":
+- [ ] **Word e PDF**, os dois;
+- [ ] **gráficos** de porte, faixa e bairros (ou distância), cada um com a tabela de números;
+- [ ] cores da marca: laranja `#D84315` nos títulos e barras, grafite `#263238` no cabeçalho das tabelas;
+- [ ] logo `../marca-agentti/assets/logo.png` no cabeçalho (até 2,5 cm) e a origem dos dados no rodapé;
+- [ ] seção final "Sobre os dados".
 
 Depois de gerar, diga em três linhas o que o relatório conclui e entregue os dois arquivos.
 

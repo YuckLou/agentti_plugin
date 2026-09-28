@@ -36,7 +36,9 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 - **Na conversa:** texto com as seções acima, sem a 10.
 - **Como arquivo** (quando a pessoa pedir Word, PDF, "arquivo" ou "para imprimir"): Word (.docx) e PDF do mesmo
-  conteúdo, seguindo a skill **marca-agentti** e usando as skills de Word e PDF do Claude. Nome do arquivo:
+  conteúdo, seguindo a skill **marca-agentti** (se ela não carregar pelo nome, leia `../marca-agentti/SKILL.md`)
+  e usando as skills de Word e PDF do Claude. Cores da marca (laranja `#D84315`, grafite `#263238`), logo no
+  cabeçalho e origem no rodapé, mesmo que a pessoa tenha pedido só "um PDF". Nome do arquivo:
   `Agentti - Ficha - <nome fantasia> - <AAAA-MM-DD>`.
 
 ## Regras
