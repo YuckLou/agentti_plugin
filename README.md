@@ -30,7 +30,7 @@ caminho certo.
 
 ### Claude (web e Desktop) e Cowork
 
-1. Personalizar → Plugins → adicionar marketplace pela URL `https://github.com/YuckLou/agentti-plugin`.
+1. Personalizar → Plugins → adicionar marketplace pela URL `https://github.com/YuckLou/agentti_plugin`.
 2. Instale o plugin **ag**.
 3. Conecte o Agentti: em Personalizar → Conectores, entre com a sua conta do Agentti quando o Claude pedir. Se o
    conector não aparecer, adicione um conector personalizado com a URL `https://app.agentti.ia.br/mcp`.
@@ -38,7 +38,7 @@ caminho certo.
 ### Claude Code
 
 ```
-/plugin marketplace add YuckLou/agentti-plugin
+/plugin marketplace add YuckLou/agentti_plugin
 /plugin install ag@agentti
 ```
 
