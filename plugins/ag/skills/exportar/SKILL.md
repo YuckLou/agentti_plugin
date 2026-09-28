@@ -1,0 +1,28 @@
+---
+name: exportar
+description: Exporta os leads de um projeto do Agentti em CSV, JSON ou Excel, com os contatos achados e o ICP, e entrega o link de download. Use quando a pessoa pede a planilha, a lista, o Excel ou o CSV dos leads, ou quer levar os leads para outro sistema (CRM, planilha).
+argument-hint: "<projeto> [csv|json|xlsx]"
+---
+
+# Exportar leads
+
+Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
+
+1. Ache o projeto com `listar_projetos` (pelo nome que a pessoa disse). Se houver mais de um parecido, pergunte.
+2. `exportar_leads` com o `formato` pedido (sem pedido: `xlsx` para quem vai abrir no Excel, `csv` para importar
+   em outro sistema). `colunas: "resumo"` por padrão; `"completo"` só se a pessoa pedir tudo.
+   Filtros quando a pessoa pedir: `categoria` (ex.: `qualificados`), `faixa_icp`, `com_whatsapp`, `cidade`,
+   `bairro`, ou `lead_ids` para uma lista escolhida.
+3. Entregue:
+   - o **link de download**, dizendo que vale **15 minutos**;
+   - o total de linhas e as colunas principais;
+   - se a pessoa quiser ver na conversa, uma tabela com até 20 linhas.
+4. Se ela quiser a planilha montada aqui (com formatação, abas, gráfico), use a skill de Excel do Claude com as
+   linhas de `formato: "json"`, e não invente coluna que não veio.
+
+## Regras
+
+- Só entram leads **salvos** no projeto. Empresas da busca que não foram salvas não aparecem; ofereça salvar.
+- Exportar não gasta cota.
+- O arquivo tem dados de contato de empresas: lembre que é para uso comercial da própria pessoa, sem repasse de
+  lista.

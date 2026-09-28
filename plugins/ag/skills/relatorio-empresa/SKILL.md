@@ -11,11 +11,14 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 ## Achar a empresa
 
 1. Com o id do lead ou o CNPJ: `ver_lead`. Passe o CNPJ **só com os 14 dígitos**, sem ponto, barra ou traço.
-2. Se `ver_lead` não achar (a empresa não está salva na conta), procure com `buscar_empresas` pelo `nome`
-   (e `cidade` + `uf`, se souber). Com o cadastro na mão, pergunte se a pessoa quer salvar num projeto
-   (`salvar_no_projeto`, gasta 1 de cota) e qualificar (`qualificar`) para ter os contatos com prova.
-   Sem isso, a ficha sai só com o cadastro da Receita, e diga isso.
-3. Só com o nome, sem cidade: pergunte a cidade antes de buscar.
+   Se a empresa não está salva na conta, a ficha vem só com o cadastro da Receita, sem contatos com prova.
+2. Com o CNPJ, `buscar_empresas` com `cnpj` traz a faixa de pré-qualificação e as unidades ativas (se a
+   ferramenta ainda não aceitar `cnpj`, procure pelo `nome` com `cidade` + `uf`). O bloco `rede` de `ver_lead`,
+   quando vier, traz o mesmo.
+3. Empresa fora da conta: pergunte se a pessoa quer salvar num projeto (`salvar_no_projeto`, gasta 1 de cota) e
+   qualificar (`qualificar`) para ter os contatos com prova. Sem isso, diga que a ficha é só do cadastro.
+4. Só com o nome, sem cidade: pergunte a cidade antes de buscar. Para achar outras unidades do mesmo grupo,
+   `buscar_empresas` pelo `nome` fantasia na cidade.
 
 ## Seções
 

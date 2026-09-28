@@ -12,9 +12,9 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 - **Da empresa:** `ver_lead` (um lead) ou `listar_leads` com `categoria: "qualificados"` e `faixa_icp: "hot"`
   (melhores de um projeto; depois `ver_lead` em cada um). Use só o que a ficha mostra.
-- **Da oferta:** o que a pessoa vende, para quem, por que comprar dela e qual o pedido. Se isso não apareceu na
-  conversa, pergunte em uma frase. Alternativa: `gerar_mensagem` devolve um rascunho feito com a oferta gravada no
-  projeto; use como base e reescreva seguindo as regras abaixo.
+- **Da oferta:** o que a pessoa vende, para quem, por que comprar dela, qual o pedido e o tom. Veja primeiro
+  `listar_projetos`: cada projeto traz `oferta` e `tom` quando estão gravados. Se não vier e não apareceu na
+  conversa, pergunte em uma frase. Se a pessoa responder, ofereça gravar no projeto com `definir_oferta`.
 - **Do canal:** use o canal que a ficha provou. WhatsApp ou telefone com selo **confirmado** vale mais que
   **provável**; e-mail da Receita costuma ser do contador, então prefira o e-mail achado no site.
 
