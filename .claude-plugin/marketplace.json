@@ -7,8 +7,11 @@
   "plugins": [
     {
       "name": "ag",
-      "source": "./",
-      "description": "Prospecção B2B, mercado, abordagem e relatórios com a base oficial da Receita Federal (Agentti Lead Generator)."
+      "displayName": "Agentti",
+      "source": "./plugins/ag",
+      "category": "sales",
+      "description": "Prospecção B2B, mercado, abordagem e relatórios com a base oficial da Receita Federal (Agentti Lead Generator).",
+      "homepage": "https://agentti.ia.br"
     }
   ]
 }
