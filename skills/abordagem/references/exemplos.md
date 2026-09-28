@@ -1,6 +1,7 @@
 # Exemplos de abordagem
 
-Todas as empresas e pessoas daqui são fictícias.
+Todas as empresas e pessoas daqui são fictícias. O que os exemplos dizem sobre quem vende (entrega, nota,
+regularidade) é de mentira também: numa mensagem real, só entra o que a pessoa contou da própria oferta.
 
 ## O erro que motivou esta skill
 

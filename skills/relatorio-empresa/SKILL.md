@@ -10,7 +10,7 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 ## Achar a empresa
 
-1. Com o id do lead ou o CNPJ: `ver_lead`.
+1. Com o id do lead ou o CNPJ: `ver_lead`. Passe o CNPJ **só com os 14 dígitos**, sem ponto, barra ou traço.
 2. Se `ver_lead` não achar (a empresa não está salva na conta), procure com `buscar_empresas` pelo `nome`
    (e `cidade` + `uf`, se souber). Com o cadastro na mão, pergunte se a pessoa quer salvar num projeto
    (`salvar_no_projeto`, gasta 1 de cota) e qualificar (`qualificar`) para ter os contatos com prova.

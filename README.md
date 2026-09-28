@@ -54,4 +54,5 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.1.1**: ajustes do primeiro teste (mensagem não inventa fatos da oferta; CNPJ só com dígitos; perguntar antes de instalar pacote).
 - **0.1.0**: primeira versão, em teste.

@@ -59,6 +59,13 @@ Use este texto, trocando o que está entre < >:
 
 No relatório de empresa sem qualificação, tire a frase dos contatos. No relatório de região sem contatos, também.
 
+## Ferramentas para gerar o arquivo
+
+Use o que já existe no ambiente (as skills de Word e PDF do Claude e as bibliotecas instaladas). No computador
+da pessoa (Claude Code), **pergunte antes** de instalar pacote ou baixar fonte; se ela não quiser, use o que
+houver e declare as fontes da marca com o substituto Arial. No ambiente isolado do Claude (web, Desktop, Cowork),
+instalar o que faltar é normal.
+
 ## Gráficos
 
 Imagem PNG com a tabela de números ao lado ou abaixo. Fundo branco, sem borda, sem 3D, rótulos em texto

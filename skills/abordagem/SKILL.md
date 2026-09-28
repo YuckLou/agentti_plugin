@@ -30,9 +30,12 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 6. **Saída educada**: "se não fizer sentido agora, é só me avisar."
 7. **Curto.** WhatsApp até 5 linhas. E-mail até 120 palavras, com assunto de até 6 palavras. Instagram até 3
    linhas.
-8. **Sem pressão falsa** (prazo inventado, "última chance"), sem promessa que a pessoa não pode cumprir, no máximo
+8. **Nada sobre quem vende que a pessoa não disse.** Entrega, prazo, nota fiscal, "o ano todo", região atendida:
+   só se ela falou. O que faltar vai entre colchetes (`[prazo de entrega]`) para ela preencher. Os modelos em
+   `references/` mostram a forma, não fatos da oferta.
+9. **Sem pressão falsa** (prazo inventado, "última chance"), sem promessa que a pessoa não pode cumprir, no máximo
    um emoji.
-9. **Tom do projeto** (consultivo, formal, direto ou amigável). Sem tom definido, consultivo.
+10. **Tom do projeto** (consultivo, formal, direto ou amigável). Sem tom definido, consultivo.
 
 ## Por porte
 
