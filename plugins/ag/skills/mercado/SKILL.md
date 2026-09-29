@@ -21,7 +21,9 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
    - **Recortes sugeridos:** dois ou três, cada um com a contagem e o motivo. Exemplo: "EPP e Demais, faixa A,
      até 2 km: 84 empresas, as mais estruturadas e perto". Para ter a contagem exata de um recorte, chame a
      estatística de novo com os filtros.
-4. Pergunte se a pessoa quer listar um dos recortes (skill **prospectar**, a partir do passo 5).
+4. Pergunte se a pessoa quer listar um dos recortes (skill **prospectar**, a partir do passo 5). Se houver
+   projeto desta oferta e região (`listar_projetos`), ofereça gravar o recorte escolhido com `salvar_busca`
+   (grátis), para ele aparecer no painel.
 
 Detalhes de cada campo e das limitações: [references/como-ler.md](references/como-ler.md).
 

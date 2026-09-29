@@ -19,6 +19,10 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
    - com o recorte recomendado (ex.: `porte: "EPP"`, `faixa_minima: "A"`), para dar a contagem exata.
 5. Opcional, se a pessoa quiser nomes: `buscar_empresas` com o recorte recomendado, `por_pagina: 10`. Entram só
    nome, bairro, porte e faixa. Sem contatos no relatório de região.
+6. **Deixe o estudo no sistema:** ache ou crie o projeto da oferta e região (`listar_projetos` / `criar_projeto`) e
+   grave cada recorte recomendado com `salvar_busca` (grátis). Cite no relatório, em "Recomendações", o nome da
+   busca salva. Se depois a pessoa pedir os detalhes das empresas, salve as escolhidas no projeto
+   (`salvar_no_projeto`, com a cota informada e o "sim" dela) e use a skill **exportar**.
 
 Leia os números como manda a skill **mercado** ([como ler](../mercado/references/como-ler.md)).
 

@@ -10,7 +10,8 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 1. Ache o projeto com `listar_projetos` (pelo nome que a pessoa disse). Se houver mais de um parecido, pergunte.
 2. `exportar_leads` com o `formato` pedido (sem pedido: `xlsx` para quem vai abrir no Excel, `csv` para importar
-   em outro sistema). `colunas: "resumo"` por padrão; `"completo"` só se a pessoa pedir tudo.
+   em outro sistema). O **arquivo do link sai completo** (~45 colunas); `colunas` só muda o que volta na conversa
+   (`"resumo"` por padrão). Para só olhar o link, `limite: 0`.
    Filtros quando a pessoa pedir: `categoria` (ex.: `qualificados`), `faixa_icp`, `com_whatsapp`, `cidade`,
    `bairro`, ou `lead_ids` para uma lista escolhida.
 3. Entregue:
@@ -22,7 +23,9 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 ## Regras
 
-- Só entram leads **salvos** no projeto. Empresas da busca que não foram salvas não aparecem; ofereça salvar.
+- Só entram leads **salvos** no projeto. Se a pessoa pedir empresas de uma busca ou de um relatório que ainda não
+  foram salvas: veja o recorte em `listar_buscas`, refaça `buscar_empresas`, diga quantas vão ser salvas e quanto
+  de cota gasta (1 por empresa), e só depois do "sim" use `salvar_no_projeto` e exporte.
 - Exportar não gasta cota.
 - O arquivo tem dados de contato de empresas: lembre que é para uso comercial da própria pessoa, sem repasse de
   lista.
