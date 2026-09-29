@@ -55,6 +55,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.4.0**: relatórios em Word e PDF gerados no servidor do Agentti (não precisa de Python no computador; os números saem da base, a análise é do Claude); lista com uma linha por empresa e sem repetir entre páginas; "salve todas" pela busca salva, com a cota mostrada antes; exportação só do que veio de uma busca.
 - **0.3.0**: projeto primeiro; a busca fica gravada no projeto e aparece como aba na Consulta CNPJ do painel (sem gastar cota); empresas só são salvas quando você escolhe; a exportação sai completa.
 - **0.2.0**: relatórios por um gerador fixo (Word e PDF iguais em qualquer lugar, com gráficos e a marca), sem o Claude escrever código a cada vez; menos tokens nas buscas.
 - **0.1.4**: comando `/ag:exportar`; a abordagem lê a oferta gravada no projeto; ficha de empresa por CNPJ com faixa e rede.
