@@ -10,7 +10,7 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 ## Coletar os números
 
-1. Ramos → `buscar_atividade`. Confirme a lista de ramos com a pessoa antes de seguir.
+1. Ramos → `buscar_atividade` com todos numa chamada (`textos: [...]`). Confirme a lista de ramos com a pessoa antes de seguir.
 2. Local → `perto_de` + `raio_km` ou `cidade` + `uf`.
 3. `estatisticas_empresas` com ramos e local: é a base de todo o relatório.
 4. Se ajudar a decisão, até três chamadas a mais:
@@ -24,38 +24,28 @@ Leia os números como manda a skill **mercado** ([como ler](../mercado/reference
 
 ## Seções
 
-1. **Resumo** (meia página): o tamanho do mercado, onde está, o perfil dominante e a recomendação em uma frase.
-2. **Método:** ramos e códigos CNAE usados, local e raio, data da consulta, "contagem completa dos
+Cada seção vira blocos do gerador (entre parênteses):
+
+1. **Resumo** (texto): o tamanho do mercado, onde está, o perfil dominante e a recomendação em uma frase. Os
+   quatro números principais vão em `destaques`.
+2. **Método** (tabela): ramos e códigos CNAE, local e raio, data da consulta, "contagem completa dos
    estabelecimentos ativos na base da Receita Federal".
-3. **Tamanho:** total, empresas distintas, densidade por km² (se houver raio).
-4. **Porte:** tabela e gráfico de barras. Explique o peso do MEI.
-5. **Pré-qualificação:** faixas A/B/C e o cruzamento porte × faixa. Diga o que a faixa mede e o que não mede.
-6. **Maturidade:** tempo ativa.
-7. **Canais de contato:** celular, só fixo, sem telefone, e-mail na Receita (com a ressalva do contador).
-8. **Onde estão:** bairros ou municípios (os 10 maiores) e a distância, com gráfico.
-9. **Recomendações:** dois ou três recortes, cada um com contagem, motivo e próximo passo (lista, qualificação,
-   visita).
-10. **Sobre os dados:** texto fixo da skill **marca-agentti**.
+3. **Tamanho** (texto): total, empresas distintas, densidade por km² (se houver raio).
+4. **Porte** (gráfico): explique o peso do MEI.
+5. **Pré-qualificação** (gráfico das faixas + gráfico empilhado porte × faixa): o que a faixa mede e o que não mede.
+6. **Maturidade** (gráfico): tempo ativa.
+7. **Canais de contato** (gráfico ou tabela): celular, só fixo, sem telefone, e-mail na Receita (ressalva do
+   contador).
+8. **Onde estão** (gráfico): os 10 bairros ou municípios com mais empresas, e a distância, se houver raio.
+9. **Recomendações** (lista): dois ou três recortes, cada um com contagem, motivo e próximo passo.
 
-## Gráficos
-
-- Barras horizontais, cor de destaque da marca, rótulo com o número e o percentual.
-- Cada gráfico com a **tabela de números ao lado ou logo abaixo**, para o cliente refazer no programa dele.
-- Gere como imagem (PNG, 150 dpi ou mais) a partir dos números da estatística. Nunca desenhe número que não veio
-  da ferramenta.
+`sobre_os_dados: "sem_contatos"` (o relatório de região não traz contatos).
 
 ## Arquivo
 
-Word (.docx) como arquivo principal e PDF do mesmo conteúdo, seguindo a skill **marca-agentti** (se ela não
-carregar pelo nome, leia `../marca-agentti/SKILL.md`) e usando as skills de Word e PDF do Claude. Nome:
-`Agentti - Mercado - <ramos resumidos> - <local> - <AAAA-MM-DD>`.
-
-Antes de entregar, confira o mínimo, mesmo que a pessoa tenha pedido só "um PDF":
-- [ ] **Word e PDF**, os dois;
-- [ ] **gráficos** de porte, faixa e bairros (ou distância), cada um com a tabela de números;
-- [ ] cores da marca: laranja `#D84315` nos títulos e barras, grafite `#263238` no cabeçalho das tabelas;
-- [ ] logo `../marca-agentti/assets/logo.png` no cabeçalho (até 2,5 cm) e a origem dos dados no rodapé;
-- [ ] seção final "Sobre os dados".
+Word e PDF, **sempre pelo gerador da skill marca-agentti** (se ela não carregar pelo nome, leia
+`../marca-agentti/SKILL.md`), mesmo que a pessoa tenha pedido só "um PDF". Não use a skill genérica de PDF ou
+Word e não escreva código de gráfico. Nome: `Agentti - Mercado - <ramos resumidos> - <local> - <AAAA-MM-DD>`.
 
 Depois de gerar, diga em três linhas o que o relatório conclui e entregue os dois arquivos.
 

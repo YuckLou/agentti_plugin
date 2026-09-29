@@ -19,13 +19,15 @@ As ferramentas são as do conector **Agentti** (`buscar_atividade`, `estatistica
 2. **Proponha os ramos compradores.** Pense em todos os ramos que compram o produto, não só no que a pessoa citou.
    Use [references/ramos-compradores.md](references/ramos-compradores.md) como ponto de partida. Mostre a lista em
    dois grupos, **núcleo** (compram com certeza) e **vale testar**, e peça confirmação.
-3. **Ache os códigos.** `buscar_atividade` para cada ramo. Mostre os códigos escolhidos com o nome oficial.
-   Até 15 códigos por busca. Se um ramo não achar, tente o termo formal da Receita.
+3. **Ache os códigos.** `buscar_atividade` com **todos os ramos numa chamada** (`textos: [...]`). Mostre os
+   códigos escolhidos com o nome oficial. Até 15 códigos por busca. Se um ramo não achar, tente o termo formal da
+   Receita.
 4. **Raio-X antes de listar.** Chame `estatisticas_empresas` com os ramos e o local. Leia o resultado como manda a
    skill **mercado**: tamanho, porte, faixa, canal, distância. Proponha dois ou três recortes com a contagem de cada
    um e deixe a pessoa escolher. Nunca pule este passo: é grátis e evita salvar gente errada.
 5. **Liste.** `buscar_empresas` com o recorte escolhido. Mostre uma tabela curta: nome, bairro, distância, porte,
-   faixa e o motivo principal. No máximo 25 linhas na conversa; o resto fica para as próximas páginas.
+   faixa e o motivo principal (a lista já vem só com isso). No máximo 25 linhas na conversa; o resto fica para as
+   próximas páginas. Telefone, e-mail e endereço da Receita só com `detalhe: true`, quando a pessoa pedir.
 6. **Salve.** Confirme quais salvar. Use um projeto existente (`listar_projetos`) ou crie um (`criar_projeto`)
    **com a oferta preenchida** (`produto`, `publico_alvo`, `proposta_de_valor`, `chamada`): as mensagens usam
    isso. Depois `salvar_no_projeto` com os CNPJs.

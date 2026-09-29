@@ -55,6 +55,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.2.0**: relatórios por um gerador fixo (Word e PDF iguais em qualquer lugar, com gráficos e a marca), sem o Claude escrever código a cada vez; menos tokens nas buscas.
 - **0.1.4**: comando `/ag:exportar`; a abordagem lê a oferta gravada no projeto; ficha de empresa por CNPJ com faixa e rede.
 - **0.1.3**: relatórios com o mínimo da marca (Word e PDF, gráficos, cores, logo) mesmo quando o pedido é só "um PDF".
 - **0.1.2**: plugin movido para `plugins/ag` (o Claude Desktop não lia o plugin na raiz do marketplace).

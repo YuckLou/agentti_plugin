@@ -38,11 +38,14 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 ## Formato
 
 - **Na conversa:** texto com as seções acima, sem a 10.
-- **Como arquivo** (quando a pessoa pedir Word, PDF, "arquivo" ou "para imprimir"): Word (.docx) e PDF do mesmo
-  conteúdo, seguindo a skill **marca-agentti** (se ela não carregar pelo nome, leia `../marca-agentti/SKILL.md`)
-  e usando as skills de Word e PDF do Claude. Cores da marca (laranja `#D84315`, grafite `#263238`), logo no
-  cabeçalho e origem no rodapé, mesmo que a pessoa tenha pedido só "um PDF". Nome do arquivo:
-  `Agentti - Ficha - <nome fantasia> - <AAAA-MM-DD>`.
+- **Como arquivo** (quando a pessoa pedir Word, PDF, "arquivo" ou "para imprimir"): Word e PDF **pelo gerador da
+  skill marca-agentti** (se ela não carregar pelo nome, leia `../marca-agentti/SKILL.md`), mesmo que a pessoa
+  tenha pedido só "um PDF". Não use a skill genérica de PDF ou Word. No JSON:
+  - cadastro e contatos em `tabela` (contatos com as colunas Canal, Contato, Selo, Origem);
+  - resumo, rede, abordagem e riscos em `texto` ou `lista`;
+  - porte, faixa e ICP em `destaques`;
+  - `sobre_os_dados: "padrao"`, ou `"sem_contatos"` se a empresa não foi qualificada;
+  - `arquivo`: `Agentti - Ficha - <nome fantasia> - <AAAA-MM-DD>`.
 
 ## Regras
 
