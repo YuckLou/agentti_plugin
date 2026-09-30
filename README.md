@@ -55,7 +55,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
-- **0.4.2**: tudo que gasta cota (salvar, qualificar) mostra antes quantas empresas e quanto de cota, e só acontece depois do seu "sim", mesmo que o pedido já diga "salve". Relatórios ficam na página **Relatórios** do painel. "Cidade e região" sem raio chutado: ferramenta `regiao` (a cidade e as que fazem divisa, ou a região metropolitana).
+- **0.4.2**: tudo que gasta cota (salvar, qualificar) mostra antes quantas empresas e quanto de cota, e só acontece depois do seu "sim", mesmo que o pedido já diga "salve". Relatórios ficam na página **Relatórios** do painel. "Cidade e região" sem raio chutado: ferramenta `regiao` (a cidade e as que fazem divisa, ou a região metropolitana). Contexto do mercado com o IBGE: população, estabelecimentos por 10 mil habitantes e PIB per capita por município, com o ano de cada dado.
 - **0.4.1**: planilha e CSV numa chamada só, com o arquivo pelo link (o Claude não remonta o arquivo na conversa); relatórios já feitos voltam com link novo (`listar_relatorios`) e aparecem no painel em Projetos → Relatórios.
 - **0.4.0**: relatórios em Word e PDF gerados no servidor do Agentti (não precisa de Python no computador; os números saem da base, a análise é do Claude); lista com uma linha por empresa e sem repetir entre páginas; "salve todas" pela busca salva, com a cota mostrada antes; exportação só do que veio de uma busca.
 - **0.3.0**: projeto primeiro; a busca fica gravada no projeto e aparece como aba na Consulta CNPJ do painel (sem gastar cota); empresas só são salvas quando você escolhe; a exportação sai completa.
