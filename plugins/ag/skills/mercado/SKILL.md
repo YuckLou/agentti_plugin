@@ -10,7 +10,7 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
 ## Passo a passo
 
-1. Ramos → `buscar_atividade` com todos numa chamada (`textos: [...]`). Local → `perto_de` + `raio_km` ou `cidade` + `uf`.
+1. Ramos → `buscar_atividade` com todos numa chamada (`textos: [...]`). Local → `perto_de` + `raio_km` ou `cidade` + `uf`; "X e região" → `cidade` + `uf` + `regiao` (veja a lista com a ferramenta `regiao`), nunca um raio chutado.
 2. `estatisticas_empresas` com os ramos e o local. É **censo** (contagem completa da base), não amostra, e não
    gasta cota.
 3. Responda em três blocos, curtos:
