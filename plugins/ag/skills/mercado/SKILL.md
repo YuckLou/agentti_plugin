@@ -25,7 +25,8 @@ Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
      estatística de novo com os filtros.
 4. Pergunte se a pessoa quer listar um dos recortes (skill **prospectar**, a partir do passo 5). Se houver
    projeto desta oferta e região (`listar_projetos`), ofereça gravar o recorte escolhido com `salvar_busca`
-   (grátis), para ele aparecer no painel.
+   (grátis), para ele aparecer no painel, e desenhar a área no mapa do projeto com `criar_geometria` (dê o
+   `link`, que abre o mapa na área).
 
 Detalhes de cada campo e das limitações: [references/como-ler.md](references/como-ler.md).
 
