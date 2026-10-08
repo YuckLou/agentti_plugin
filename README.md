@@ -23,6 +23,8 @@ cliente consegue editar.
 | `/ag:relatorio-empresa <CNPJ ou lead>` | ficha completa, na conversa ou em Word e PDF |
 | `/ag:relatorio-regiao <ramos> em <local>` | relatório de mercado em Word e PDF |
 | `/ag:exportar <projeto> [csv, json ou xlsx]` | leads do projeto com link de download (15 min) |
+| `/ag:descobrir <o que buscar> em <local>` | lugares no Google Maps que a Receita não mostra ou mostra sem contato |
+| `/ag:pesquisa-profunda <lead ou CNPJ>` | quem é a empresa, o que vende, se está ativa, com a fonte de cada fato |
 
 Não precisa decorar: pedir em português normal ("quem compra polpa de fruta na Vila Mariana?") já usa o
 caminho certo.
@@ -55,6 +57,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.5.0**: o agente sabe como o motor trabalha (Chrome do Agentti, ritmo humano, provas) e usa o que a empresa diz de si (bio, último post, avaliações do Maps, site), sempre com a fonte. Skills novas **descobrir** (Google Maps pelo Chrome) e **pesquisa-profunda**. Relatórios e campanhas seguem o que você pedir (foco, canal, tom, quantidade).
 - **0.4.2**: tudo que gasta cota (salvar, qualificar) mostra antes quantas empresas e quanto de cota, e só acontece depois do seu "sim", mesmo que o pedido já diga "salve". Relatórios ficam na página **Relatórios** do painel. "Cidade e região" sem raio chutado: ferramenta `regiao` (a cidade e as que fazem divisa, ou a região metropolitana). Contexto do mercado com o IBGE: população, estabelecimentos por 10 mil habitantes e PIB per capita por município, com o ano de cada dado.
 - **0.4.1**: planilha e CSV numa chamada só, com o arquivo pelo link (o Claude não remonta o arquivo na conversa); relatórios já feitos voltam com link novo (`listar_relatorios`) e aparecem no painel em Projetos → Relatórios.
 - **0.4.0**: relatórios em Word e PDF gerados no servidor do Agentti (não precisa de Python no computador; os números saem da base, a análise é do Claude); lista com uma linha por empresa e sem repetir entre páginas; "salve todas" pela busca salva, com a cota mostrada antes; exportação só do que veio de uma busca.
