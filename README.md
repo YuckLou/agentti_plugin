@@ -57,6 +57,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.5.3**: mapa no relatório: `gerar_imagem_mapa` desenha as empresas do recorte (pontos pela faixa ou calor) com o painel do Agentti aberto no navegador, e o `gerar_relatorio` põe o mapa numa seção "No mapa". O mapa que você está vendo também vai para o relatório (botão "Enviar ao assistente" na prancha do mapa).
 - **0.5.0**: o agente sabe como o motor trabalha (Chrome do Agentti, ritmo humano, provas) e usa o que a empresa diz de si (bio, último post, avaliações do Maps, site), sempre com a fonte. Skills novas **descobrir** (Google Maps pelo Chrome) e **pesquisa-profunda**. Relatórios e campanhas seguem o que você pedir (foco, canal, tom, quantidade).
 - **0.4.2**: tudo que gasta cota (salvar, qualificar) mostra antes quantas empresas e quanto de cota, e só acontece depois do seu "sim", mesmo que o pedido já diga "salve". Relatórios ficam na página **Relatórios** do painel. "Cidade e região" sem raio chutado: ferramenta `regiao` (a cidade e as que fazem divisa, ou a região metropolitana). Contexto do mercado com o IBGE: população, estabelecimentos por 10 mil habitantes e PIB per capita por município, com o ano de cada dado.
 - **0.4.1**: planilha e CSV numa chamada só, com o arquivo pelo link (o Claude não remonta o arquivo na conversa); relatórios já feitos voltam com link novo (`listar_relatorios`) e aparecem no painel em Projetos → Relatórios.
