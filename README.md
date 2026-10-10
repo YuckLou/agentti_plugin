@@ -57,6 +57,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.6.0**: menos ferramentas no conector (24 → 19), com a mesma precisão: `listar` (projetos, buscas, relatórios, imagens e geometrias) e `projeto` (cria o projeto ou grava a oferta). Textos das ferramentas mais curtos, para gastar menos tokens a cada pedido. As skills já usam os nomes novos; atualize o plugin junto com o conector.
 - **0.5.4**: relatório e mensagem pela IA também mostram a prévia da cota e esperam o seu "sim" (tabela de cotas de 10/10/2026: relatórios e textos da IA têm cota própria).
 - **0.5.3**: mapa no relatório: `gerar_imagem_mapa` desenha as empresas do recorte (pontos pela faixa ou calor) com o painel do Agentti aberto no navegador, e o `gerar_relatorio` põe o mapa numa seção "No mapa". O mapa que você está vendo também vai para o relatório (botão "Enviar ao assistente" na prancha do mapa).
 - **0.5.0**: o agente sabe como o motor trabalha (Chrome do Agentti, ritmo humano, provas) e usa o que a empresa diz de si (bio, último post, avaliações do Maps, site), sempre com a fonte. Skills novas **descobrir** (Google Maps pelo Chrome) e **pesquisa-profunda**. Relatórios e campanhas seguem o que você pedir (foco, canal, tom, quantidade).
