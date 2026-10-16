@@ -8,6 +8,17 @@ argument-hint: "<ramos> em <cidade, bairro ou CEP>"
 
 Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
+## Atalho: `estudo_de_mercado` (use primeiro)
+
+Para o pedido comum — estudo ou relatório da região, com ou sem a planilha das empresas A ou A/B — são três
+passos: `buscar_atividade` com todos os ramos (confirme a lista com a pessoa), `estudo_de_mercado` com ramos,
+local, `titulo` e, se pedirem planilha, `planilha_faixa`; mostre a prévia (números e cota) e, com o "sim", a
+mesma chamada com `confirmar` e `previa_id`. O servidor faz números, IBGE, relatório Word e PDF, mapa e planilha.
+Escreva o `resumo` pensando no produto, se quiser; sem ele, o relatório sai só com os números.
+
+O passo a passo abaixo é para quando a pessoa pede algo que o atalho não faz (comparar partes da região,
+recomendações sob medida, mapa de calor).
+
 ## Coletar os números
 
 1. Ramos → `buscar_atividade` com todos numa chamada (`textos: [...]`). Confirme a lista de ramos com a pessoa antes de seguir.

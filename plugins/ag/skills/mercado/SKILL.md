@@ -8,6 +8,10 @@ argument-hint: "<ramos> em <cidade, bairro ou CEP>"
 
 Pedido recebido pelo comando (pode vir vazio): $ARGUMENTS
 
+Se o pedido também quer relatório em Word/PDF ou planilha das empresas, use a ferramenta `estudo_de_mercado` (veja a
+skill **relatorio-regiao**, "Atalho") em vez dos passos abaixo. `estatisticas_empresas` já vem resumida; peça
+`detalhe: true` só quando precisar do IBGE completo por município.
+
 ## Passo a passo
 
 1. Ramos → `buscar_atividade` com todos numa chamada (`textos: [...]`). Local → `perto_de` + `raio_km` ou `cidade` + `uf`; "X e região" → `cidade` + `uf` + `regiao` (veja a lista com a ferramenta `regiao`), nunca um raio chutado.
