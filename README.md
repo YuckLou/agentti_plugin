@@ -57,6 +57,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.7.1**: telefone e e-mail da Receita aparecem só das empresas salvas na conta (salvar gasta a cota); a lista diz se a empresa tem contato.
 - **0.7.0**: estudo de mercado completo numa ferramenta (`estudo_de_mercado`): prévia com números e cota, um "sim", e o servidor entrega relatório em Word e PDF, a área no mapa do projeto e, se pedida, a planilha das empresas A ou A/B. O relatório vem com dois mapas desenhados no servidor (faixa e concentração, sem precisar do painel aberto) e o Claude escreve a leitura dos números. "No bairro X" conta dentro do contorno do bairro, não num raio. `estatisticas_empresas` responde resumido (`detalhe: true` para tudo). O gerador de reserva (marca-agentti) acompanha o do servidor.
 - **0.6.1**: campanha pelo WhatsApp e pelo Instagram: `preparar_abordagem` escreve a mensagem de cada empresa e põe as empresas no painel da extensão (quem envia é você, dentro do limite do dia); `listar` com `abordagem` mostra quem respondeu e quem pediu para não ser contatado.
 - **0.6.0**: menos ferramentas no conector (24 → 19), com a mesma precisão: `listar` (projetos, buscas, relatórios, imagens e geometrias) e `projeto` (cria o projeto ou grava a oferta). Textos das ferramentas mais curtos, para gastar menos tokens a cada pedido. As skills já usam os nomes novos; atualize o plugin junto com o conector.
