@@ -57,6 +57,7 @@ desligue um dos dois em `/mcp` para as ferramentas não aparecerem em dobro.
 
 ## Versões
 
+- **0.8.0**: mapa em 3D no relatório de mercado. Com o painel do Agentti aberto, o estudo de mercado ganha a página "Concentração em relevo" (colunas de empresas por hexágono e a renda do Censo 2022 de pé); a prévia diz se vai ter. `gerar_imagem_mapa` aceita `tipo: "relevo"`.
 - **0.7.2**: o estudo de mercado de uma vez é dos planos Starter e Pro; no Grátis o Claude oferece o passo a passo.
 - **0.7.1**: telefone e e-mail da Receita aparecem só das empresas salvas na conta (salvar gasta a cota); a lista diz se a empresa tem contato.
 - **0.7.0**: estudo de mercado completo numa ferramenta (`estudo_de_mercado`): prévia com números e cota, um "sim", e o servidor entrega relatório em Word e PDF, a área no mapa do projeto e, se pedida, a planilha das empresas A ou A/B. O relatório vem com dois mapas desenhados no servidor (faixa e concentração, sem precisar do painel aberto) e o Claude escreve a leitura dos números. "No bairro X" conta dentro do contorno do bairro, não num raio. `estatisticas_empresas` responde resumido (`detalhe: true` para tudo). O gerador de reserva (marca-agentti) acompanha o do servidor.
